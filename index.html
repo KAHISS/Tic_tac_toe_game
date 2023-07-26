@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
+    <script src="index.js" defer></script>
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <main id="mainContent">
+      <div id="container">
+        <div id="currentPlayer">
+          <p>Vez de:</p>
+          <h1>Iniciar</h1>
+        </div>
+        <div id="game" class="drawGame">
+          <button class="field" data-simbol="" id="1"></button>
+          <button class="field" data-simbol="" id="2"></button>
+          <button class="field" data-simbol="" id="3"></button>
+          <button class="field" data-simbol="" id="4"></button>
+          <button class="field" data-simbol="" id="5"></button>
+          <button class="field" data-simbol="" id="6"></button>
+          <button class="field" data-simbol="" id="7"></button>
+          <button class="field" data-simbol="" id="8"></button>
+          <button class="field" data-simbol="" id="9"></button>
+        </div>
+        <button id="restart">Recomeçar</button>
+      </div>
+      <section id="players">
+        <div id="playerX">
+          <label for="namePlayer1">Jogador <span id="X">X</span>:</label>
+          <br />
+          <input type="text" id="namePlayer1" />
+        </div>
+        <div id="playerO">
+          <label for="namePlayer2">Jogador <span id="O">O</span>:</label>
+          <br />
+          <input type="text" id="namePlayer2" />
+        </div>
+        <hr />
+        <div id="currentPlayerInit">
+          <div>
+            <p>Quem começa?</p>
+          </div>
+          <div id="currentBtn">
+            <button id="btnX" class="initBtn" data-init="X">X</button>
+            <button id="btnO" class="initBtn" data-init="O">O</button>
+            <button id="btnRandom" class="initBtn">?</button>
+          </div>
+        </div>
+      </section>
+      <section id="playersVictory">
+        <div id="player1Wins" class="countWin">
+          <h2>X</h2>
+          <p id="numberWinsPlayer1">0</p>
+        </div>
+        <div id="player2Wins" class="countWin">
+          <h2>O</h2>
+          <p id="numberWinsPlayer2">0</p>
+        </div>
+        <div id="ties" class="countWin">
+          <h2>EMP</h2>
+          <p id="numberWinsTie">0</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
